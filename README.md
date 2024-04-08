@@ -118,3 +118,47 @@ docs/
     └── 02.保守ガイド/
         └── README.md
 ```
+
+## 前提条件
+
+### 共通
+
+| ツール         | タグ                         | 参考                                                    | 備考                                 |
+| -------------- | ---------------------------- | ------------------------------------------------------- | ------------------------------------ |
+| Docker         | コンテナ化                   | [Docker 公式](https://www.docker.com/)                  | コンテナ技術のデファクトスタンダード |
+| Docker Compose | コンテナオーケストレーション | [Docker Compose 公式](https://docs.docker.com/compose/) | 複数のコンテナを管理するためのツール |
+
+### フロントエンド
+
+| ツール                | タグ                      | 参考                                                                                        | 備考                                     |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Node.js               | ランタイム                | [Node.js 公式](https://nodejs.org/)                                                         | JavaScript のサーバーサイド実行環境      |
+| Yarn                  | パッケージマネージャ      | [Yarn 公式](https://yarnpkg.com/)                                                           | 高速なパッケージ管理ツール               |
+| Next.js               | フレームワーク            | [Next.js 公式](https://nextjs.org/)                                                         | React ベースの静的サイトジェネレーター   |
+| TypeScript            | 言語                      | [TypeScript 公式](https://www.typescriptlang.org/)                                          | JavaScript に型を提供する言語            |
+| Jest                  | テストフレームワーク      | [Jest 公式](https://jestjs.io/ja/)                                                          | JavaScript のテストフレームワーク        |
+| React Testing Library | テストユーティリティ      | [React Testing Library 公式](https://testing-library.com/docs/react-testing-library/intro/) | React コンポーネントのテスト用ライブラリ |
+| Storybook             | UI コンポーネント         | [Storybook 公式](https://storybook.js.org/)                                                 | UI コンポーネントの開発環境              |
+| ESLint                | フォーマット、リンター    | [ESLint 公式](https://eslint.org/)                                                          | JavaScript の静的解析ツール              |
+| Stylelint             | フォーマット、リンター    | [Stylelint 公式](https://stylelint.io/)                                                     | CSS の静的解析ツール                     |
+| Prettier              | フォーマット              | [Prettier 公式](https://prettier.io/)                                                       | コードフォーマッター                     |
+| Cucumber              | BDD、テストフレームワーク | [Cucumber 公式](https://cucumber.io/)                                                       | ビヘイビア駆動開発(BDD)のフレームワーク  |
+| Playwright            | E2E テスト                | [Playwright 公式](https://playwright.dev/)                                                  | ブラウザテストのためのツール             |
+
+### バックエンド
+
+| ツール     | タグ                     | 参考                                                  | 備考                                                                                |
+| ---------- | ------------------------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| FastAPI    | フレームワーク           | [FastAPI 公式](https://fastapi.tiangolo.com/)         | 高速で、Python 3.6+の型ヒントを使用したモダンな Web フレームワーク                  |
+| Uvicorn    | ASGI サーバ              | [Uvicorn 公式](https://www.uvicorn.org/)              | FastAPI の推奨する非同期サーバ                                                      |
+| Gunicorn   | WSGI サーバ              | [Gunicorn 公式](https://gunicorn.org/)                | Uvicorn と組み合わせて使用されることが多い                                          |
+| SQLAlchemy | ORM                      | [SQLAlchemy 公式](https://www.sqlalchemy.org/)        | データベース操作を抽象化するためのライブラリ                                        |
+| Alembic    | マイグレーションツール   | [Alembic 公式](https://alembic.sqlalchemy.org/)       | データベーススキーマのバージョン管理                                                |
+| Pydantic   | データバリデーション     | [Pydantic 公式](https://pydantic-docs.helpmanual.io/) | FastAPI で広く使用される、Python の型ヒントを利用したデータバリデーションライブラリ |
+| pytest     | テストフレームワーク     | [pytest 公式](https://docs.pytest.org/en/stable/)     | Python のテストフレームワーク                                                       |
+| pytest-cov | カバレッジ               | [pytest-cov 公式](https://pytest-cov.readthedocs.io/) | テストカバレッジを計測するためのプラグイン                                          |
+| pytest-bdd | BDD テストフレームワーク | [pytest-bdd 公式](https://pytest-bdd.readthedocs.io/) | BDD テストを実行するためのプラグイン                                                |
+| flake8     | リンター                 | [flake8 公式](https://flake8.pycqa.org/en/latest/)    | Python のリンター                                                                   |
+| black      | フォーマッタ             | [black 公式](https://black.readthedocs.io/en/stable/) | Python のフォーマッタ                                                               |
+| isort      | ソートツール             | [isort 公式](https://pycqa.github.io/isort/)          | Python の import 文をソートするツール                                               |
+| mypy       | 型チェッカ               | [mypy 公式](https://mypy.readthedocs.io/en/stable/)   | Python の型チェッカ                                                                 |
