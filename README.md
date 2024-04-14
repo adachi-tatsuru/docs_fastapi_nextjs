@@ -25,6 +25,8 @@ docs/
 │   ├── 02.設計フェーズ/
 │   │   └── README.md
 │   └── 03.開発フェーズ/
+│       ├── 00.github/
+│       │   └── PULL_REQUEST_TEMPLATE.md
 │       ├── 00.マイルストーンテンプレート/
 │       │   ├── 01.計画/
 │       │   │   └── README.md
